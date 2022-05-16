@@ -1,0 +1,169 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 130%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header{
+    background-image: url('../IMG/fon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0px 10px;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin-bottom: 49px;
+}
+.phone{
+    margin-left: 19px;
+    padding: 12px 31px 13px;
+    background-color: 886239;
+    border-radius: 23px;
+}
+.menu{
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 27px 0 24px;
+    margin-top: 15px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 49px;
+}
+.menu_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.phone-number{
+    background: #886239;
+    border-radius: 22px;
+    padding: 12px 31px 13px;
+    margin-left: 19px;
+}
+.content{
+    margin-bottom: auto;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 130%;
+    color: #1f1e1e;
+    text-align: center;
+}
+.text{
+    width: 422px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #1f1e1e;
+    margin-bottom: 20px;
+}
+.btn{
+    display: inline-block;
+    width: 250px;
+    background: #886239;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 19px 51px 20px;
+    margin-bottom: 19px;
+}
+.arrow{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.fixed_menu{
+    display: none;
+    position: fixed;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.fixed_menu:after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../IMG/134216_menu_lines_hamburger_icon.svg);
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.fixed_menu:hover{
+    left: 0;
+}
+.fixed_menu_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    font-size: 24px;
+    padding: 50px 22px;
+    line-height: 150%;
+}
+.fixed_menu_item{
+    border-bottom: 2px solid #fff;
+    width: 100%;
+}
+@media screen and (max-width:840px) {
+    .content{
+        font-size: 50px;
+        color: #fff;
+    }
+    .phone span {
+        display: none;
+    }
+}
+@media screen and (max-width:520px){
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .phone{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .phone-number{
+        margin-left: 0px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+        color: #fff;
+    }
+    .menu{
+        display: none;
+    }
+    .fixed_menu{
+        display: block;
+    }
+}
